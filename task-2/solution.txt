@@ -1,0 +1,17 @@
+git config --global user.name "neymaaryoussef"
+git config --global user.email "youssefmedhat900@gmail.com"
+git clone https://github.com/neymaaryoussef/linux.git ~/neymaaryoussef
+cd neymaaryoussef
+mkdir task-2
+cd task-2
+echo Hello world >> greeting.txt
+git add greeting.txt
+git commit -m Added greeting
+git checkout -b intro
+echo I love Git >> greeting.txt
+git add greeting.txt
+git commit -m Added I love Git
+git checkout main
+git merge intro
+git tag -a v1 -m  version 1
+git push origin main
