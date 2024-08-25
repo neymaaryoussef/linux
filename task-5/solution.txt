@@ -1,0 +1,2 @@
+cut -d ',' -f 2 task-5/info.csv | sort | uniq > emails.txt
+ps aux --sort=cmd | awk '{print $2, $11}' > processes.txt
